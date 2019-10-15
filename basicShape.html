@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Basic Shape</title>
+    <style>
+        html{
+            height: 100%;
+        }
+
+        body{
+            height: 100%;
+            margin: 0;
+        }
+
+        @keyframes example {
+            to {
+                top: 50vh;
+                left: 50vw;
+                border-radius: 50%;
+                transform: rotate(360deg)
+            }
+        }
+
+        div{
+            width: 100px;
+            height: 100px;
+            top: 50px;
+            left: 100px;
+            position: absolute;
+            background-color: black;
+            animation-name: example;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
